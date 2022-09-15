@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const btcPrice = prompt('What is Bitcoin price today?', '');
 const btcPriceNumber = Number.parseInt(btcPrice, 10);
