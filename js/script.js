@@ -66,13 +66,19 @@ function detectPersonalLevel (){
 
 // detectPersonalLevel();
 
-function showMyDB (){
-    if (personalMovieDB.privat == false) {
+// function showMyDB (){
+//     if (personalMovieDB.privat == false) {
+//         console.log(personalMovieDB);
+//     }
+// }
+
+function showMyDB (hidden){
+    if (!hidden) {
         console.log(personalMovieDB);
     }
 }
 
-showMyDB();
+showMyDB(personalMovieDB.privat);
 
 function writeYourGenres() {
     const genres = [];
